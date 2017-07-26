@@ -3,31 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/common.css">
     <title>首页</title>
     <style>
-    body {
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .first {
-        display: block;
-        text-align: center;
-        font: 24px/50px "Times New Roman";
-        background-color: #495A80;
-        color: #B0E0E6;
-        margin: 0px;
-        padding: 0px;
-        width: auto;
-        height: 50px;
-        /*line-height: 50px;*/
+    .container-flex div {
+    	color: #06B9D1;
     }
     </style>
 </head>
 
 <body>
-    <div class="first">欢迎来到朱颖的个人网站</div>
-    <div class="second">hello world</div>
+    <div class="nav">欢迎来到朱颖的个人网站</div>
+    <div class="container-flex">
+    	<div onclick="skipToDetail()">
+    		git的搭建与操作
+    	</div>
+    	<div>代理的使用</div>
+    	<div>个人网站的搭建</div>
+    </div>
 </body>
+
+<script>
+	
+	function skipToDetail() {
+		window.location.href = "html/detail.html";
+	}
+</script>
 
 </html>
