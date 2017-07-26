@@ -5,20 +5,48 @@ body {
     overflow: hidden;
 }
 
-.nav {
-    display: block;
-    text-align: center;
-    font: 24px/50px "Times New Roman";
+header {
+    display: flex;
+    font: 20px/50px "Times New Roman";
     background-color: #495A80;
-    color: #B0E0E6;
-    margin: 0px;
-    padding: 0px;
+    /*color: #B0E0E6;*/
+    color: #eee;
     width: auto;
-    height: 50px;
-    /*line-height: 50px;*/
+    height: 60px;
+    vertical-align: middle;
+    justify-content: space-between;
+    /*line-height: 60px;*/
+}
+
+.nav {
+    display: flex;
+    line-height: 60px;
+    margin-right: 8%;
+}
+
+.nav div {
+    cursor: pointer;
+    /*border: 2px solid #ff0;*/
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav div:hover {
+    /*background-color: #06B9D1;*/
+    background-color: rgba(86,113,143,0.6)
+}
+
+.logo {
+    margin-left: 100px;
+    width: 100px;
+    height: 60px;
 }
 
 .container-flex {
     display: flex;
     flex-direction: column;
+}
+
+.container-flex div {
+    cursor: pointer;
 }

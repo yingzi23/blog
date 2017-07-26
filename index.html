@@ -7,27 +7,32 @@
     <title>首页</title>
     <style>
     .container-flex div {
-    	color: #06B9D1;
+        color: #06B9D1;
     }
     </style>
 </head>
 
 <body>
-    <div class="nav">欢迎来到朱颖的个人网站</div>
+    <header>
+        <img class="logo" src="refs/logo.png">
+        <div class="nav">
+        	<div>主页</div>
+        	<div onclick="">日志</div>
+        	<div>生活</div>
+        </div>        
+    </header>
+    
     <div class="container-flex">
-    	<div onclick="skipToDetail()">
-    		git的搭建与操作
-    	</div>
-    	<div>代理的使用</div>
-    	<div>个人网站的搭建</div>
+        <div onclick="skipToDetail()">git的搭建与操作</div>
+        <div onclick="skipToDetail()">代理的使用</div>
+        <div onclick="skipToDetail()">个人网站的搭建</div>
     </div>
 </body>
-
+<script src="script/common.js"></script>
 <script>
-	
-	function skipToDetail() {
-		window.location.href = "html/detail.html";
-	}
+function skipToDetail() {
+    window.location.href = "html/detail.html";
+}
 </script>
 
 </html>

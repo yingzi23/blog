@@ -6,28 +6,32 @@
     <link rel="stylesheet" href="../css/common.css">
     <title>详情</title>
     <style>
-    .nav {
-        text-align: left;
-    }
     .detail {
-    	background-color: #ff0;
-    	width: 100%;
-    	height: 100%;
+        background-color: #ff0;
+        width: 100%;
+        height: 100%;
     }
-
     </style>
 </head>
 
 <body>
-    <div class="nav" onclick="backToHome()">返回</div>
+    <header>
+        <img class="logo" src="../refs/logo.png">
+        <div class="nav">
+            <div onclick="backToHome()">主页</div>
+            <div onclick="">日志</div>
+            <div>生活</div>
+        </div>
+    </header>
     <iframe src="../refs/git.h" id="text" name=iframe1></iframe>
-    <div class="detail" id="detail-git">ff</div>
+    <div class="detail" id="detail-git"></div>
 </body>
 <script src="../script/common.js"></script>
 <script>
 var temp = document.getElementById("text").innerText;
 // document.getElementById("detail-git").innerHTML = iframe1.body.innerText;
 document.getElementById("detail-git").innerHTML = temp;
-	// detail-git.innerHTML = iframe1.body.innerText;
+// detail-git.innerHTML = iframe1.body.innerText;
 </script>
+
 </html>
